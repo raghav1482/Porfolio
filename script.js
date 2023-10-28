@@ -33,6 +33,7 @@ const skillcon=document.getElementsByClassName("skillcontain")[0];
 for(let i=0 ; i<myskills.length;i++){
     const skill=document.createElement("div");
     skill.setAttribute('class','skillbox');
+    skill.setAttribute('data-aos','fade-left');
     const img=document.createElement("img");
     img.setAttribute('src',myskills[i]);
     skill.appendChild(img);
@@ -46,6 +47,7 @@ const projcon=document.getElementsByClassName("projcon")[0];
 for(let i=0 ; i<myproj.length;i++){
     const proj=document.createElement("div");
     proj.setAttribute('class','projc');
+    proj.setAttribute('data-aos','fade-up');
     const img=document.createElement("img");
     img.setAttribute('src',myproj[i][0]);
     img.addEventListener('click' , ()=>{
